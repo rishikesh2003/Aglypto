@@ -1,0 +1,34 @@
+{
+  "name": "aglypto",
+  "version": "1.0.0",
+  "description": "A fully fledged signal bot for crypto",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev-compile1": "watchify ./public/js/home/app.js -o ./public/js/home/index.js",
+    "dev-compile2": "watchify ./public/js/accumulation/app.js -o ./public/js/accumulation/index.js",
+    "dev-start": "concurrently \"npm run dev-compile1\" \"npm run dev-compile2\" \"nodemon server.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Centexus/Aglypto.git"
+  },
+  "author": "Rishikesh S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Centexus/Aglypto/issues"
+  },
+  "homepage": "https://github.com/Centexus/Aglypto#readme",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "browserify": "^17.0.0",
+    "concurrently": "^6.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "technicalindicators": "^3.1.0",
+    "telegraf": "^4.4.2",
+    "watchify": "^4.0.0"
+  }
+}

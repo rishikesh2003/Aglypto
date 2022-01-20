@@ -1,0 +1,150 @@
+/* font karla */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+header {
+  padding: 20px;
+  margin: 10px 0;
+  margin-top: 20px;
+  background: rgb(233, 233, 233);
+  border-top: 1px solid rgba(0, 0, 0, 0.418);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.418);
+}
+
+a {
+  color: black;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table {
+  font-size: 16px;
+  width: 100%;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+}
+
+.header-items {
+  font-weight: bold;
+  background: rgb(233, 233, 233);
+  text-align: center;
+}
+
+.row {
+  min-width: 10vw;
+  border-right: 1px solid rgba(0, 0, 0, 0.418);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.418);
+  border-top: 1px solid rgba(0, 0, 0, 0.418);
+  min-height: 20px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-small {
+  min-width: 6vw;
+}
+
+.first-el {
+  border-left: 1px solid rgba(0, 0, 0, 0.418);
+}
+
+.column {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 0px 7px 1px rgba(133, 122, 122, 0.75);
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(133, 122, 122, 0.75);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(133, 122, 122, 0.75);
+  width: 100%;
+}
+
+.nav-box {
+  display: flex;
+}
+
+.nav-box li {
+  margin: 5px;
+  list-style: none;
+}
+
+.nav-link {
+  padding: 10px;
+  text-transform: uppercase;
+  color: grey;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.nav-logo {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.indicators {
+  display: flex;
+}
+
+.indicators .first-item {
+  border-left: 1px solid rgba(0, 0, 0, 0.418);
+}
+
+.item {
+  border-right: 1px solid rgba(0, 0, 0, 0.418);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.418);
+  border-top: 1px solid rgba(0, 0, 0, 0.418);
+  min-height: 20px;
+  padding: 5px;
+  min-width: 40vw;
+  text-align: center;
+  font-weight: bold;
+  background: rgb(233, 233, 233);
+}
+
+.item-main {
+  min-width: 28vw;
+}
+
+.indi-row {
+  min-width: 9.33vw;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  color: grey;
+  padding-bottom: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 100vh;
+  padding: 25px;
+}

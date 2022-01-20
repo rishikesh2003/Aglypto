@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aglypto</title>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <% const name = symbol %>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="https://img.icons8.com/cute-clipart/64/000000/bitcoin.png" />
+        <h1 class="nav-logo">Aglypto</h1>
+      </div>
+      <div class="nav-box">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/accumulation" class="nav-link">Accumulation</a></li>
+      </div>
+    </div>
+    <header>
+      <h1>Chart : <%= symbol%></h1>
+    </header>
+    <!-- TradingView Widget BEGIN -->
+    <div class="chart-container" id="tradingview_d20f0"></div>
+    <footer>
+      Charts Provided by
+      <a target="_blank" rel="noopener noreferrer" href="https://tradingview.com">TradingView</a>
+    </footer>
+
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+        autosize: true,
+        symbol: "BINANCE:" + `<%= name %>` + "PERP",
+        interval: "60",
+        timezone: "Asia/Kolkata",
+        theme: "dark",
+        style: "1",
+        locale: "in",
+        toolbar_bg: "#f1f3f6",
+        enable_publishing: false,
+        withdateranges: true,
+        hide_side_toolbar: false,
+        allow_symbol_change: true,
+        studies: ["MACD@tv-basicstudies", "RSI@tv-basicstudies", "IchimokuCloud@tv-basicstudies"],
+        container_id: "tradingview_d20f0",
+      });
+    </script>
+  </body>
+</html>
