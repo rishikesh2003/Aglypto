@@ -30,7 +30,7 @@ It displays the chart of the current symbol from TradingView.
 
 # How to use
 
-This site is deployed in heroku [Live Site Link](https://www.google.com)
+This site is deployed in heroku [Live Site Link](https://aglypto.herokuapp.com)
 
 ## How to run locally
 
