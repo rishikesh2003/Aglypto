@@ -1,5 +1,7 @@
 # Aglypto for Binance Futures
 
+### This site is deployed in heroku [Live Site Link](https://aglypto.herokuapp.com)
+
 Binance Futures Trading Dashboard that provides live websocket market data and calculates MACD, ICHIMOKU and RSI and Volume accumulation per timeframe.
 
 ## Screenshots
